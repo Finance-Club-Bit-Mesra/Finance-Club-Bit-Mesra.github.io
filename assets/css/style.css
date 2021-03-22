@@ -1963,7 +1963,7 @@ section {
 }
 
 .testimonials .swiper-slide {
-  opacity: .3;
+  opacity: 1;
 }
 
 @media (max-width: 1199px) {
@@ -1978,6 +1978,6 @@ section {
 @media (min-width: 1200px) {
   .testimonials .swiper-slide-next {
     opacity: 1;
-    transform: scale(1.12);
+    //transform: scale(1.12);
   }
 }
