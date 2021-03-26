@@ -26,6 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  
 
 </head>
 
@@ -82,12 +83,27 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">Finance Club On Campus Bit Mesra</h1>
+            <h1 data-aos="fade-up">Finance Club <br> Bit Mesra</h1>
             <h2 data-aos="fade-up" data-aos-delay="400">UNLEASH THE CORPORATE TYCOON WITHIN YOU</h2>
             <div class="d-flex">
               <a href="#about" class="btn-get-started scrollto">JOIN US</a>
-              <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i style="background: none;"class="fas fa-play-circle"></i></a>
-            </div>
+			  
+			  <!--====== popup vdo section========-->
+			  <div id="light">
+					<a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+					<video id="teaser" width="600" controls>
+						<source src="assets/img/fcvdo.mp4" type="video/mp4">
+					</video>
+			  </div>
+			  <div id="fade" onClick="lightbox_close();"></div>
+
+			  <div>
+			  <a href="#"  class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true" onclick="lightbox_open();">Watch video <i style="background: none;"class="fas fa-play-circle"></i></a>
+			  </div>
+			  
+			  <!--===== popup vdo section close====--->
+			</div>
+            
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img">
             <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
@@ -437,61 +453,7 @@
   
       </section><!-- End Testimonials Section -->
 
-    <!-- ======= Team Section(Faculty Advisors) ======= -->
-    <section id="team" class="team">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Faculty Advisors</h2>
-          <p>Meet Our Faculty Advisors</p>
-        </header>
-
-        <div class="row gy-4 d-flex justify-content-center">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Faculty Section -->
+    
 
 	<!-- ======= Team Section ======= -->
     <section id="team" class="team">
@@ -864,6 +826,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min"></script>  
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
   <!-- Template Main JS File -->
@@ -872,7 +835,8 @@
 
 
   </script>
-
+  
+  
 </body>
 
 </html>
