@@ -955,6 +955,7 @@ section {
 .team {
   background: #fff;
   padding: 60px 0;
+  
 }
 
 .team .member {
@@ -963,7 +964,7 @@ section {
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
 .team .member .member-img {
@@ -1051,12 +1052,12 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients .clients-slider .swiper-slide img {
-  opacity: 0.5;
+  
   transition: 0.3s;
 }
 
 .clients .clients-slider .swiper-slide img:hover {
-  opacity: 1;
+ 
 }
 
 .clients .clients-slider .swiper-pagination {
@@ -1068,7 +1069,7 @@ section {
   width: 12px;
   height: 12px;
   background-color: #fff;
-  opacity: 1;
+ 
   border: 1px solid #4154f1;
 }
 
@@ -1900,7 +1901,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  padding: 30px;
+  padding: 10px;
   margin: 40px 30px;
   box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
   background: #fff;
@@ -1908,7 +1909,7 @@ section {
   display: flex;
   flex-direction: column;
   text-align: center;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
 .testimonials .testimonial-item .stars {
@@ -1963,12 +1964,12 @@ section {
 }
 
 .testimonials .swiper-slide {
-  opacity: 1;
+  opacity:0.3;
 }
 
 @media (max-width: 1199px) {
   .testimonials .swiper-slide-active {
-    opacity: 1;
+   
   }
   .testimonials .swiper-pagination {
     margin-top: 0;
@@ -1978,6 +1979,64 @@ section {
 @media (min-width: 1200px) {
   .testimonials .swiper-slide-next {
     opacity: 1;
-    //transform: scale(1.12);
+    transform: scale(1.1);
   }
 }
+/*-----------------  video- popup-----------------*/
+
+#fade {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .70;
+  filter: alpha(opacity=80);
+}
+
+#light {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 600px;
+  max-height: 360px;
+  margin-left: -300px;
+  margin-top: -180px;
+  border: 2px solid #FFF;
+  background: #FFF;
+  z-index: 1002;
+  overflow: visible;
+}
+
+#boxclose {
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 3px;
+  background: #222222;
+  font-size: 31px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 1002;
+  opacity: 0.9;
+}
+
+.boxclose:before {
+  content: "×";
+}
+
+#fade:hover ~ #boxclose {
+  display:none;
+}
+
