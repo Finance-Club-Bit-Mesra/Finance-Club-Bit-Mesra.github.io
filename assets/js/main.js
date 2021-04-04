@@ -59,7 +59,7 @@ function lightbox_close() {
 
   /**
    * Navbar links active state on scroll
-   */
+   
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
     let position = window.scrollY + 200
@@ -76,10 +76,10 @@ function lightbox_close() {
   }
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
-
+  */
   /**
    * Scrolls to an element with header offset
-   */
+   
   const scrollto = (el) => {
     let header = select('#header')
     let offset = header.offsetHeight
@@ -94,7 +94,7 @@ function lightbox_close() {
       behavior: 'smooth'
     })
   }
-
+  */
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
