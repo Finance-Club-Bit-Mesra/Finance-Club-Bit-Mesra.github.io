@@ -71,7 +71,7 @@
             </ul>
           </li>-->
           <li><a class="nav-link " href="#contact">Contact</a></li>
-          <li><a class="getstarted " onclick="openForm()">JOIN US</a></li>
+          <li><a class="getstarted cursor" onclick="openForm()">JOIN US</a></li>
 
           <!--pop-up join_us Form  -->
           <div class="container form-popup scrollset" id="joinusForm">
@@ -142,7 +142,7 @@
             <h1 data-aos="fade-up">Finance Club <br> Bit Mesra</h1>
             <h2 data-aos="fade-up" data-aos-delay="400">UNLEASH THE CORPORATE TYCOON WITHIN YOU</h2>
             <div class="d-flex">
-              <a onclick="openForm()" class="btn-get-started scrollto">JOIN US</a>
+              <a onclick="openForm()" class="btn-get-started scrollto cursor">JOIN US</a>
 			  
 			  <!--====== popup vdo section========-->
 			  <div id="light">
@@ -957,10 +957,12 @@
 <script>
 function openForm() {
     document.getElementById("joinusForm").style.display = "block";
+    document.body.style.overflow="hidden";
 }
 
 function closeForm() {
     document.getElementById("joinusForm").style.display = "none";
+    document.body.style.overflow="";
 }
 </script>
 <!-- data messsenger  -->

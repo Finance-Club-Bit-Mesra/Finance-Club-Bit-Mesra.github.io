@@ -39,4 +39,8 @@
 }
 .closebtn{
   color: black;
+  position: fixed;
+}
+.cursor{
+  cursor: pointer;
 }
