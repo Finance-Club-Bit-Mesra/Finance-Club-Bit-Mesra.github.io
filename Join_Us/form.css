@@ -15,7 +15,7 @@
   top:0;
   left:0;
   right: 0;
-  z-index:1;
+  z-index:1000;
   overflow: auto;
 }
 .logobox{
@@ -40,7 +40,18 @@
 .closebtn{
   color: black;
   position: fixed;
+  cursor: pointer;
+  text-align: end;
+  top: 3rem;
+  right: 3rem;
+  z-index: 1005;
 }
 .cursor{
   cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  .closebtn{right: 1rem;}
+}
+@media only screen and (max-width: 550px) {
+  .closebtn{right: 50%;top: 0;}
 }
