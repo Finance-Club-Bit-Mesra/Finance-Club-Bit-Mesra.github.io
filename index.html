@@ -27,6 +27,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/Join_Us/form.css">
   
 
 </head>
@@ -70,7 +71,61 @@
             </ul>
           </li>-->
           <li><a class="nav-link " href="#contact">Contact</a></li>
-          <li><a class="getstarted " href="#about">JOIN US</a></li>
+          <li><a class="getstarted " onclick="openForm()">JOIN US</a></li>
+
+          <!--pop-up join_us Form  -->
+          <div class="container form-popup scrollset" id="joinusForm">
+            <div class="container mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-x-circle-fill closebtn" viewBox="0 0 16 16" onclick="closeForm()">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                </svg>
+            </div>
+            <div class="card mx-auto mt-3 logobox" style="max-width: 25rem;min-width: none;">
+                <img src="assets/img/finance_club_logo.png" alt="error" class="logo my-auto">
+            </div>
+            <div class="container card mx-auto px-5 pb-5 formbox" style="max-width: 60rem;min-width: none;">
+                <form method="post" autocomplete="off" name="google-sheet" class="row g-3 needs-validation innercontent"
+                    >
+                    <div class="col-md-4">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="Name" required>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <label for="roll_no" class="form-label">Roll No.</label>
+                        <input type="text" class="form-control" name="Roll No." required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="branch" class="form-label">Branch</label>
+                        <input type="text" class="form-control" name="Branch" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="Email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="resume" class="form-label">Resume Link / Linkedin Profile Link</label>
+                        <input class="form-control" type="text" name="Resume" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="Reason" class="form-label">Why do you wish to join the club?</label>
+                        <textarea type="text" class="form-control" name="Reason for joining" required></textarea>
+                    </div>
+                    <div class="col-md-12">
+                      <label for="Query" class="form-label">Other questions/queries if any?</label>
+                      <textarea type="text" class="form-control" name="Query"></textarea>
+                  </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary" type="submit">Apply</button>
+                    </div>
+                </form>
+            </div>
+    
+        </div>
+        <!-- end of pop-up form -->
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -87,7 +142,7 @@
             <h1 data-aos="fade-up">Finance Club <br> Bit Mesra</h1>
             <h2 data-aos="fade-up" data-aos-delay="400">UNLEASH THE CORPORATE TYCOON WITHIN YOU</h2>
             <div class="d-flex">
-              <a href="#about" class="btn-get-started scrollto">JOIN US</a>
+              <a onclick="openForm()" class="btn-get-started scrollto">JOIN US</a>
 			  
 			  <!--====== popup vdo section========-->
 			  <div id="light">
@@ -882,6 +937,51 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min"></script>  
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <!-- validator css -->
+  <script>(function () {
+    'use strict'
+    var forms = document.querySelectorAll('.needs-validation')
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+        })
+})()
+</script>
+<!-- pop-up function -->
+<script>
+function openForm() {
+    document.getElementById("joinusForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("joinusForm").style.display = "none";
+}
+</script>
+<!-- data messsenger  -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzb5bd6KYCvlMxoF68k3o1J9MH-_MIjwMKhyw5I3lebZ-8gmu7SSJsuUJX7hwJktLI5/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => redirect())
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>
+<!-- pop-up to index redirector -->
+<script>
+  function redirect() {
+    alert("Thanks for applying ..! We Will Contact You Soon...");
+   window.location.href = "index.html";
+  }
+</script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
