@@ -53,5 +53,5 @@
   .closebtn{right: 1rem;}
 }
 @media only screen and (max-width: 550px) {
-  .closebtn{right: 50%;top: 0;}
+  .closebtn{right: 5%;top: 5%;color: blue;}
 }
