@@ -1,0 +1,57 @@
+.scrollset{
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+.scrollset::-webkit-scrollbar{
+  height: 0;
+  width: 0;
+}
+.form-popup {
+  height:100%;
+  width:100vw;
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  z-index:1000;
+  overflow: auto;
+}
+.logobox{
+    background: linear-gradient(135deg, #ffffff, #2276f3);
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.644);
+    height: 15rem;
+    z-index: 1;
+}
+.logo {
+  object-fit: contain;
+}
+.formbox{
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(4, 20, 245, 0.712);
+    top: -7rem;
+}
+.innercontent{
+    margin-top: 9rem;
+}
+.closebtn{
+  color: rgb(36, 136, 250);
+  position: fixed;
+  cursor: pointer;
+  text-align: end;
+  top: 3rem;
+  right: 3rem;
+  z-index: 1005;
+}
+.cursor{
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  .closebtn{right: 1rem;}
+}
+@media only screen and (max-width: 550px) {
+  .closebtn{right: 5%;top: 5%;color: blue;}
+}
