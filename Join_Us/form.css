@@ -38,7 +38,7 @@
     margin-top: 9rem;
 }
 .closebtn{
-  color: black;
+  color: rgb(36, 136, 250);
   position: fixed;
   cursor: pointer;
   text-align: end;
