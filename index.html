@@ -39,7 +39,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="assets/img/only_logo.png" alt="">
         <span>Finance Club</span>
       </a>
 
@@ -940,55 +940,8 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min"></script>  
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <!-- validator css -->
-  <script>(function () {
-    'use strict'
-    var forms = document.querySelectorAll('.needs-validation')
-    Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
-                form.classList.add('was-validated')
-            }, false)
-        })
-})()
-</script>
-<!-- pop-up function -->
-<script>
-function openForm() {
-    document.getElementById("joinusForm").style.display = "block";
-    document.body.style.overflow="hidden";
-}
-
-function closeForm() {
-    document.getElementById("joinusForm").style.display = "none";
-    document.body.style.overflow="";
-    document.body.style.filter="";
-}
-</script>
-<!-- data messsenger  -->
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzb5bd6KYCvlMxoF68k3o1J9MH-_MIjwMKhyw5I3lebZ-8gmu7SSJsuUJX7hwJktLI5/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => redirect())
-                .catch(error => console.error('Error!', error.message))
-            })
-</script>
-<!-- pop-up to index redirector -->
-<script>
-  function redirect() {
-    alert("Thanks for applying ..! We Will Contact You Soon...");
-   window.location.href = "index.html";
-  }
-</script>
-
+  <script src="/Join_Us/form.js"></script>
+  
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
