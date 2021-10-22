@@ -27,7 +27,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="/Join_Us/form.css">
   
 
 </head>
@@ -50,7 +49,7 @@
           <li><a class="nav-link " href="#values">Events</a></li>
           <li><a class="nav-link " href="#services">Workshop</a></li>
 		      <li><a class="nav-link  " href="#testimonials">Testimonials</a></li>
-          <li><a class="nav-link " href="#team">Team</a></li>
+          <li><a class="nav-link " href="team.html">Team</a></li>
           <!--
           <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -71,70 +70,13 @@
             </ul>
           </li>-->
           <li><a class="nav-link " href="#contact">Contact</a></li>
-          <li><a class="getstarted cursor" onclick="openForm()">JOIN US</a></li>
-
-          
-
+          <li><a class="getstarted " href="#about">JOIN US</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
-
-  <!--pop-up join_us Form  -->
-  <div class="container form-popup scrollset" id="joinusForm">
-    <div class="container mt-1">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-            class="bi bi-x-circle-fill closebtn float-end" viewBox="0 0 16 16" onclick="closeForm()">
-            <path
-                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
-        </svg>
-    </div>
-    <div class="card mx-auto mt-3 logobox" style="max-width: 25rem;min-width: none;">
-        <img src="assets/img/finance_club_logo.png" alt="error" class="logo my-auto">
-    </div>
-    <div class="container card mx-auto px-5 pb-5 formbox" style="max-width: 60rem;min-width: none;">
-        <form method="post" autocomplete="off" name="google-sheet" class="row g-3 needs-validation innercontent"
-            >
-            <div class="col-md-4">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" name="Name" required>
-            </div>
-
-            <div class="col-md-4">
-                <label for="roll_no" class="form-label">Roll No.</label>
-                <input type="text" class="form-control" name="Roll No." required>
-            </div>
-            <div class="col-md-4">
-                <label for="branch" class="form-label">Branch</label>
-                <input type="text" class="form-control" name="Branch" required>
-            </div>
-            <div class="col-md-6">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" name="Email" required>
-            </div>
-            <div class="col-md-6">
-                <label for="resume" class="form-label">Resume Link / Linkedin Profile Link</label>
-                <input class="form-control" type="text" name="Resume" required>
-            </div>
-            <div class="col-md-12">
-                <label for="Reason" class="form-label">Why do you wish to join the club?</label>
-                <textarea type="text" class="form-control" name="Reason for joining" required></textarea>
-            </div>
-            <div class="col-md-12">
-              <label for="Query" class="form-label">Other questions/queries if any?</label>
-              <textarea type="text" class="form-control" name="Query"></textarea>
-          </div>
-            <div class="d-grid">
-                <button class="btn btn-primary" type="submit">Apply</button>
-            </div>
-        </form>
-    </div>
-
-</div>
-<!-- end of pop-up form -->
-
 
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
@@ -145,7 +87,7 @@
             <h1 data-aos="fade-up">Finance Club <br> Bit Mesra</h1>
             <h2 data-aos="fade-up" data-aos-delay="400">UNLEASH THE CORPORATE TYCOON WITHIN YOU</h2>
             <div class="d-flex">
-              <a onclick="openForm()" class="btn-get-started scrollto cursor">JOIN US</a>
+              <a href="#about" class="btn-get-started scrollto">JOIN US</a>
 			  
 			  <!--====== popup vdo section========-->
 			  <div id="light">
@@ -190,7 +132,7 @@
               <div class="content">
                 <h2>Who We Are</h2>
                 <h3>Finance Club</h3>
-                <p align="justify">
+                <p align ="justify">
                   The Finance Club, BIT Mesra has been established with the aim to acquaint the students with economic and financial concepts enabling then to cope up with the complex financial world outside. The club provides the opportunity to gain various financial skills which will not only help them manage their personal finances well but also generate passive source of income. It gives the platform where finance enthusiasts can come together for all round holistic development in an atmosphere of friendly competition.
                 </p>
                 <div class="text-center text-lg-start">
@@ -441,7 +383,7 @@
               <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
               <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>-->
-          </div>
+          <!-- </div> -->
 
         </div>
 
@@ -469,13 +411,13 @@
                     Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                   </p>
                   <div class="profile mt-auto">
-                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                    <h3>Saul Goodman</h3>
-                    <h4>Ceo &amp; Founder</h4>
+                    <img src="assets/img/team/sharanya.jpg" class="testimonial-img" alt="">
+                    <h3>Sharanya Jha</h3>
+                    <h4>Vice President</h4>
                   </div>
                 </div>
               </div><!-- End testimonial item -->
-  
+              
               <div class="swiper-slide">
                 <div class="testimonial-item">
                  
@@ -483,9 +425,9 @@
                     Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
                   </p>
                   <div class="profile mt-auto">
-                    <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                    <h3>Sara Wilsson</h3>
-                    <h4>Designer</h4>
+                    <img src="assets/img/testimonials/Fac advisor.jpg" class="testimonial-img" alt="">
+                    <h3>Dr.Anand Prasad Sinha</h3>
+                    <h4>Faculty Advisor</h4>
                   </div>
                 </div>
               </div><!-- End testimonial item -->
@@ -497,9 +439,9 @@
                     Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
                   </p>
                   <div class="profile mt-auto">
-                    <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                    <h3>Jena Karlis</h3>
-                    <h4>Store Owner</h4>
+                    <img src="assets/img/team/tanay.jpg" class="testimonial-img" alt="">
+                    <h3>Tanay Goel</h3>
+                    <h4>President</h4>
                   </div>
                 </div>
               </div><!-- End testimonial item -->
@@ -794,8 +736,8 @@
                 <div class="info-box">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
-                  <strong>Tanay Goel<br>(President):</strong><br><a href="tel: +917607073910">+917607073910</a><br><br>
-                  <strong>Arpit<br>(President):</strong><br><a href="tel: +919570099779">+919570099779</a><br>
+                  <strong>Suyash Bhagat<br>(President):</strong><br><a href="tel: +917835877316">+917835877316</a><br><br>
+                  <strong>Deval Tripathi<br>(Vice-President):</strong><br><a href="tel: +917485813826">+917485813826</a><br>
                 </div>
               </div>
               <div class="col-md-6">
@@ -912,7 +854,7 @@
               BIT MESRA <br>
               Ranchi,<br>
               Jharkhand <br><br>
-              <strong>Phone:</strong> Tanay Goel (President):<br><a href="tel: +91 76070 73910">+91 76070 73910</a> <br>
+              <strong>Phone:</strong> Deval Tripathi (Vice-President):<br><a href="tel: +91 7485813826">+91 7485813826</a> <br>
               <strong>Email: </strong><a href="mailto:financeclub@bitmesra.ac.in">financeclub@bitmesra.ac.in</a><br>
             </p>
 
@@ -940,54 +882,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min"></script>  
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <!-- validator css -->
-  <script>(function () {
-    'use strict'
-    var forms = document.querySelectorAll('.needs-validation')
-    Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
-                form.classList.add('was-validated')
-            }, false)
-        })
-})()
-</script>
-<!-- pop-up function -->
-<script>
-function openForm() {
-    document.getElementById("joinusForm").style.display = "block";
-    document.body.style.overflow="hidden";
-}
-
-function closeForm() {
-    document.getElementById("joinusForm").style.display = "none";
-    document.body.style.overflow="";
-    document.body.style.filter="";
-}
-</script>
-<!-- data messsenger  -->
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzb5bd6KYCvlMxoF68k3o1J9MH-_MIjwMKhyw5I3lebZ-8gmu7SSJsuUJX7hwJktLI5/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => redirect())
-                .catch(error => console.error('Error!', error.message))
-            })
-</script>
-<!-- pop-up to index redirector -->
-<script>
-  function redirect() {
-    alert("Thanks for applying ..! We Will Contact You Soon...");
-   window.location.href = "index.html";
-  }
-</script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

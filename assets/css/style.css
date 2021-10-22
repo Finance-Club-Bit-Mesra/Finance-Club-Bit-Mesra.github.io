@@ -1,4 +1,4 @@
-
+ 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -25,6 +25,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Nunito", sans-serif;
 }
 
+
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -46,6 +48,8 @@ section {
   color: #4154f1;
   text-transform: uppercase;
 }
+
+
 
 .section-header p {
   margin: 10px 0 0 0;
@@ -111,7 +115,7 @@ section {
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #8894f6;
+  color: #262627;
   content: "/";
 }
 
@@ -527,7 +531,7 @@ section {
     width: 80%;
   }
 }
-
+ 
 @-webkit-keyframes up-down {
   0% {
     transform: translateY(15px);
