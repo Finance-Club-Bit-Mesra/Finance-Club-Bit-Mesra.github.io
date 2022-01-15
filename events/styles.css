@@ -1,9 +1,10 @@
 .innercontainer {
   position: relative;
-
 }
+
 .rowcontainer{
-  margin: auto;
+  margin-left: auto;
+  margin-right:auto;
   margin-top: 100px;
   margin-bottom: 50px;
   width: 80%;
