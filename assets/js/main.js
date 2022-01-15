@@ -51,7 +51,7 @@ function lightbox_close() {
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -59,7 +59,7 @@ function lightbox_close() {
 
   /**
    * Navbar links active state on scroll
-   
+
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
     let position = window.scrollY + 200
@@ -79,7 +79,7 @@ function lightbox_close() {
   */
   /**
    * Scrolls to an element with header offset
-   
+
   const scrollto = (el) => {
     let header = select('#header')
     let offset = header.offsetHeight
@@ -241,7 +241,7 @@ function lightbox_close() {
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfokio-lightbox'
@@ -307,3 +307,17 @@ function lightbox_close() {
   });
 
 })();
+
+ // eventpage
+ // function event1in(){
+ //   console.log(document.getElementById("event1").innerHTML);
+ //   divi = document.getElementById("event1");
+ //   divi.innerHTML = ' <p onmouseout="event1out()" style="position:absolute;">hello i am mahak shah</p>'
+ //
+ // }
+ // function event1out(){
+ //   console.log(document.getElementById("event1").innerHTML);
+ //   divi = document.getElementById("event1");
+ //   divi.innerHTML = '  <img class="eventimage" src="https://media-exp1.licdn.com/dms/image/C5622AQENzIMuVmDkfw/feedshare-shrink_800/0/1641531898429?e=1645056000&v=beta&t=aWxSkkfrlWjzsC2u-2TvjDedxIMakLdazJu1MU5vJro" alt="">'
+ //
+ // }

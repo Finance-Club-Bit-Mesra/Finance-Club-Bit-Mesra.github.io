@@ -28,8 +28,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="/Join_Us/form.css">
-  
 
+  <!-- event css file -->
+  <link rel="stylesheet" href="events/styles.css">
 </head>
 
 <body>
@@ -49,9 +50,11 @@
           <li><a class="nav-link " href="#about">About</a></li>
           <li><a class="nav-link " href="#values">Events</a></li>
           <li><a class="nav-link " href="#services">Workshop</a></li>
+
 		      <li><a class="nav-link  " href="#testimonials">Testimonials</a></li>
           <li><a class="nav-link " href="team.html">Team</a></li>
           
+
           <li><a href="blog.html">Blog</a></li>
           <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -73,7 +76,7 @@
           <li><a class="nav-link " href="#contact">Contact</a></li>
           <li><a class="getstarted cursor" onclick="openForm()">JOIN US</a></li>
 
-          
+
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -85,133 +88,132 @@
   <!--pop-up join_us Form  -->
   <div class="container form-popup scrollset" id="joinusForm">
     <div class="container mt-1">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-            class="bi bi-x-circle-fill closebtn float-end" viewBox="0 0 16 16" onclick="closeForm()">
-            <path
-                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x-circle-fill closebtn float-end" viewBox="0 0 16 16" onclick="closeForm()">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+      </svg>
     </div>
     <div class="card mx-auto mt-3 logobox" style="max-width: 25rem;min-width: none;">
-        <img src="assets/img/finance_club_logo.png" alt="error" class="logo my-auto">
+      <img src="assets/img/finance_club_logo.png" alt="error" class="logo my-auto">
     </div>
     <div class="container card mx-auto px-5 pb-5 formbox" style="max-width: 60rem;min-width: none;">
-        <form method="post" autocomplete="off" name="google-sheet" class="row g-3 needs-validation innercontent"
-            >
-            <div class="col-md-4">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" name="Name" required>
-            </div>
+      <form method="post" autocomplete="off" name="google-sheet" class="row g-3 needs-validation innercontent">
+        <div class="col-md-4">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" name="Name" required>
+        </div>
 
-            <div class="col-md-4">
-                <label for="roll_no" class="form-label">Roll No.</label>
-                <input type="text" class="form-control" name="Roll No." required>
-            </div>
-            <div class="col-md-4">
-                <label for="branch" class="form-label">Branch</label>
-                <input type="text" class="form-control" name="Branch" required>
-            </div>
-            <div class="col-md-6">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" name="Email" required>
-            </div>
-            <div class="col-md-6">
-                <label for="resume" class="form-label">Resume Link / Linkedin Profile Link</label>
-                <input class="form-control" type="text" name="Resume" required>
-            </div>
-            <div class="col-md-12">
-                <label for="Reason" class="form-label">Why do you wish to join the club?</label>
-                <textarea type="text" class="form-control" name="Reason for joining" required></textarea>
-            </div>
-            <div class="col-md-12">
-              <label for="Query" class="form-label">Other questions/queries if any?</label>
-              <textarea type="text" class="form-control" name="Query"></textarea>
-          </div>
-            <div class="d-grid">
-                <button class="btn btn-primary" type="submit">Apply</button>
-            </div>
-        </form>
+        <div class="col-md-4">
+          <label for="roll_no" class="form-label">Roll No.</label>
+          <input type="text" class="form-control" name="Roll No." required>
+        </div>
+        <div class="col-md-4">
+          <label for="branch" class="form-label">Branch</label>
+          <input type="text" class="form-control" name="Branch" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" name="Email" required>
+        </div>
+        <div class="col-md-6">
+          <label for="resume" class="form-label">Resume Link / Linkedin Profile Link</label>
+          <input class="form-control" type="text" name="Resume" required>
+        </div>
+        <div class="col-md-12">
+          <label for="Reason" class="form-label">Why do you wish to join the club?</label>
+          <textarea type="text" class="form-control" name="Reason for joining" required></textarea>
+        </div>
+        <div class="col-md-12">
+          <label for="Query" class="form-label">Other questions/queries if any?</label>
+          <textarea type="text" class="form-control" name="Query"></textarea>
+        </div>
+        <div class="d-grid">
+          <button class="btn btn-primary" type="submit">Apply</button>
+        </div>
+      </form>
     </div>
 
-</div>
-<!-- end of pop-up form -->
+  </div>
+  <!-- end of pop-up form -->
 
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">Finance Club <br> Bit Mesra</h1>
-            <h2 data-aos="fade-up" data-aos-delay="400">UNLEASH THE CORPORATE TYCOON WITHIN YOU</h2>
-            <div class="d-flex">
-              <a onclick="openForm()" class="btn-get-started scrollto cursor">JOIN US</a>
-			  
-			  <!--====== popup vdo section========-->
-			  <div id="light">
-					<a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
-					<video id="teaser" width="600" controls>
-						<source src="assets/img/fcvdo.mp4" type="video/mp4">
-					</video>
-			  </div>
-			  <div id="fade" onClick="lightbox_close();"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Finance Club <br> Bit Mesra</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">UNLEASH THE CORPORATE TYCOON WITHIN YOU</h2>
+          <div class="d-flex">
+            <a onclick="openForm()" class="btn-get-started scrollto cursor">JOIN US</a>
 
-			  <div>
-			  <a href="#"  class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true" onclick="lightbox_open();">Watch video <i style="background: none;"class="fas fa-play-circle"></i></a>
-			  </div>
-			  
-			  <!--===== popup vdo section close====--->
-			</div>
-            
+            <!--====== popup vdo section========-->
+            <div id="light">
+              <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+              <video id="teaser" width="600" controls>
+                <source src="assets/img/fcvdo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div id="fade" onClick="lightbox_close();"></div>
+
+            <div>
+              <a href="#" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true" onclick="lightbox_open();">Watch video <i style="background: none;" class="fas fa-play-circle"></i></a>
+            </div>
+
+            <!--===== popup vdo section close====--->
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-          </div>
+
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
         </div>
       </div>
-  
-    </section><!-- End Hero -->
+    </div>
+
+  </section><!-- End Hero -->
 
   <main id="main">
 
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
 
-        <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up">
 
-          <header class="section-header">
-            <h2>About</h2>
-            <p>About us</p>
-          </header>
+        <header class="section-header">
+          <h2>About</h2>
+          <p>About us</p>
+        </header>
 
-          <div class="row gx-0">
-  
-            <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-              <div class="content">
-                <h2>Who We Are</h2>
-                <h3>Finance Club</h3>
-                <p align="justify">
-                  The Finance Club, BIT Mesra has been established with the aim to acquaint the students with economic and financial concepts enabling then to cope up with the complex financial world outside. The club provides the opportunity to gain various financial skills which will not only help them manage their personal finances well but also generate passive source of income. It gives the platform where finance enthusiasts can come together for all round holistic development in an atmosphere of friendly competition.
-                </p>
-                <div class="text-center text-lg-start">
-                  <a href="#values" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                    <span>Know More</span>
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
-                </div>
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h2>Who We Are</h2>
+              <h3>Finance Club</h3>
+              <p align="justify">
+                The Finance Club, BIT Mesra has been established with the aim to acquaint the students with economic and financial concepts enabling then to cope up with the complex financial world outside. The club provides the opportunity to gain
+                various financial skills which will not only help them manage their personal finances well but also generate passive source of income. It gives the platform where finance enthusiasts can come together for all round holistic
+                development in an atmosphere of friendly competition.
+              </p>
+              <div class="text-center text-lg-start">
+                <a href="#values" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Know More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </div>
-  
-            <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-              <img src="assets/img/about.png" class="img-fluid" alt="">
-            </div>
-  
           </div>
-        </div>
 
-      </section><!-- End About Section -->
-  
-        <!-- ======= Counts Section ======= -->
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/about.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
     <!--
     <section id="counts" class="counts">
       <div class="container" data-aos="fade-up">
@@ -261,7 +263,8 @@
         </div>
 
       </div>
-    </section>--><!-- End Counts Section -->
+    </section>-->
+    <!-- End Counts Section -->
 
 
 
@@ -307,7 +310,7 @@
 
     </section><!-- End Coming up Section -->
 
-    
+
 
     <!-- ======= Objective Section ======= -->
     <section id="features" class="features">
@@ -376,47 +379,41 @@
         </div> <!-- END of objective section row -->
 
 
-    <!-- ======= Events and Workshops Section ======= -->
-    <section id="services" class="services">
+        <!-- ======= Events and Workshops Section ======= -->
+        <section id="services" class="services">
 
-      <div class="container" data-aos="fade-up">
+          <div class="container" data-aos="fade-up">
 
-        <header class="section-header">
-          <h2>EVENTS</h2>
-          <p>Events and Workshops</p>
-        </header>
+            <header class="section-header">
+              <h2>EVENTS</h2>
+              <p>Events and Workshops</p>
+            </header>
 
-        <div class="row gy-4">
+            <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-box blue">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Inauguration Ceremony</h3>
-              <p>Finance Club was inaugurated with a vision to make everyone aware of the importance and basics of finance. An engineering mind too needs to brush up the finance skills and manage personal finances as well and explore the world of finance with much options and scopes.</p>
-              <!--<a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>-->
-            </div>
-          </div>
+              <div class="col-lg-4 col-md-6 innercontainer" data-aos-delay="200">
+                <img class="eventimage" src="https://media-exp1.licdn.com/dms/image/C5622AQENzIMuVmDkfw/feedshare-shrink_800/0/1641531898429?e=1645056000&v=beta&t=aWxSkkfrlWjzsC2u-2TvjDedxIMakLdazJu1MU5vJro" alt="">
+                <div class="overlay">
+                  <div class="text">The workshop shall be structured in an easy to imbibe module wise format for better learning, with topics ranging from basics to the very pinnacles of the finance world. It shall be a great opportunity for finance enthusiasts to learn about Strategies in Finance from Industry Professionals, with each resource person being a stalwart in their field. </div>
+                </div>
+              </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-box orange">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Financial Webinar</h3>
-              <p>Topic-Effects of Financial Inclusion on Poverty Rates</p>
-              <p>Our personal finance is something which we all thrive for and Finance club empowers you to gain the most unique insights on managing personal Finance. </p>
-              <!--<a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>-->
-            </div>
-          </div>
+              <div class="col-lg-4 col-md-6 innercontainer" data-aos-delay="300">
+                <img class="eventimage " src="https://media-exp1.licdn.com/dms/image/C4E22AQEccVtublc0Rg/feedshare-shrink_800/0/1639820361900?e=1645056000&v=beta&t=V9vk32a25Qcki_G7P6kqYWA9Dsuj10-LH1YSd4SsR4I" alt="">
+                <div class="overlay">
+                  <div class="text">Gathering knowledge will not help you gain acknowledgement unless you exhibit it. So fasten your seatbelts for the 22nd and 23rd of this December, as The Finance Club BIT Mesra, brings to you the most invigorating and instructive event, “QUIZANCE”, a quiz competition with a brilliant opportunity to showcase your expertise on business and finance.With fascinating prizes worth ₹ 6k, This event comprises 2 rounds.</div>
+                </div>
+              </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-box green">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Coming Soon..</h3>
-              <p>To Be Announced Soon</p>
-              <!--<a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>-->
-            </div>
-          </div>
+              <div class="col-lg-4 col-md-6 innercontainer" data-aos-delay="400">
+                <img class="eventimage" src="https://media-exp1.licdn.com/dms/image/C4D22AQGFWb5LIpyFNg/feedshare-shrink_800/0/1633020307200?e=1645056000&v=beta&t=IqEZ6fN6AOx_gTmk8NaqSaBzknyFeb1uGkt7uIi4o3Q" alt="">
+                <div class="overlay">
+                  <div class="text">So gear up to showcase your trading skills as the Finance Club, BIT Mesra brings you La casa de financià. An event where you can use your knack for the market to gain exciting rewards. It comprises two rounds that would allow you to scrutinize your marketing and trading skills.
+ </div>
+                </div>
+              </div>
 
-         <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-box red">
               <i class="ri-discuss-line icon"></i>
               <h3>Asperiores Commodi</h3>
@@ -441,11 +438,15 @@
               <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
               <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>-->
+
+            </div>
+            <div class="d-grid gap-2 " style="margin-top:10px;">
+              <button onclick="window.location.href='event.html'" class="btn btn-primary" style="background-color: #4154F1 "type="button" ><h5>More events .....</h5></button>
+            </div>
           </div>
 
-        </div>
 
-      </div>
+
 
     </section><!-- End Services Section -->
 
@@ -500,115 +501,368 @@
                     <img src="assets/img/team/tanay.jpg" class="testimonial-img" alt="">
                     <h3>Tanay Goel</h3>
                     <h4>President</h4>
+
+
+                  </div>
+                </div><!-- End testimonial item -->
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+
+
+        </section><!-- End Testimonials Section -->
+
+
+
+        <!-- ======= Team Section ======= -->
+        <section id="team" class="team">
+
+          <div class="container" data-aos="fade-up">
+
+            <header class="section-header">
+              <h2>Team</h2>
+              <p> Meet the Team Members</p>
+            </header>
+
+            <div class="row gy-4 d-flex justify-content-center" style="padding:20px; margin-top: 10px; margin-bottom:10px;">
+
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/suyash1.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href="mailto:suyash.bhagat05@gmail.com"><i class="bi bi-envelope"></i></a>
+                      <a href="https://m.facebook.com/suyash.bhagats"><i class="bi bi-facebook"></i></a>
+                      <a href="https://www.instagram.com/_suyash.03/"><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/suyash-bhagat-6296b516b/"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Suyash Bhagat</h4>
+                    <span>President</span>
+                    <span>Founding Member</span>
+                    <!--<p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>-->
                   </div>
                 </div>
-              </div><!-- End testimonial item -->
-  
-            
+              </div>
+
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/mahima.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href="mailto:monalisa2111999@gmail.com"><i class="bi bi-envelope"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Mahima Bansal</h4>
+                    <span>President</span>
+                    <!--<p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/trishant.jpg" class="img-fluid" alt="" width="600px" height="400px">
+                    <div class="social">
+                      <a href="mailto:trishantgarg@gmail.com"><i class="bi bi-envelope"></i></a>
+                      <a href="https://www.facebook.com/trishant.agarwal"><i class="bi bi-facebook"></i></a>
+                      <a href="https://www.instagram.com/trishantagarwal/"><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/trishant-agarwal-58a6b2153/"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Trishant Agarwal</h4>
+                    <span>Vice-President</span>
+                    <span>Founding Member</span>
+                    <!--<p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>-->
+                  </div>
+                </div>
+              </div>
+
+
             </div>
-            <div class="swiper-pagination"></div>
+
+            <div class="row gy-4 d-flex justify-content-center" style="padding:20px; margin-top: 10px; margin-bottom:10px;">
+
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/deval.jpeg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Deval Tripathi</h4>
+                    <span>Vice-President</span>
+                    <span>Founding Member</span>
+                    <!--<p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/vibhu.jpeg" class="img-fluid" alt="" width="600px" height="400px">
+                    <div class="social">
+                      <a href="mailto:vibhubhatia0007@gmail.com"><i class="bi bi-envelope"></i></a>
+                      <a href="https://www.facebook.com/profile.php?id=100008940287252"><i class="bi bi-facebook"></i></a>
+                      <a href="https://www.instagram.com/vibhu.669/"><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/vibhu-bhatia-483629167/"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Vibhu Bhatia</h4>
+                    <span>General Secretary</span>
+                    <span>Founding Member</span>
+                    <!--<p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>-->
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/tanay.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href="mailto:tanaygoel851@gmail.com"><i class="bi bi-envelope"></i></a>
+                      <a href="https://www.facebook.com/tanay.goel.946"><i class="bi bi-facebook"></i></a>
+                      <a href="https://www.instagram.com/goel.tanay/"><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/tanaygoel01/"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Tanay Goel</h4>
+                    <span>Treasurer</span>
+                    <span>Founding Member</span>
+                    <!--<p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>-->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row gy-4 d-flex justify-content-center" style="padding:20px; margin-top: 10px; margin-bottom:10px;">
+
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/ayush.jpeg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href="mailto:ayushshambharkar22@gmail.com"><i class="bi bi-envelope"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Ayush Kumar</h4>
+                    <span>Joint Secretary</span>
+                    <!--<p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/arpit.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href="mailto:arpitfalcon1@gmail.com"><i class="bi bi-envelope"></i></a>
+                      <a href="https://www.facebook.com/arpit.falcon/"><i class="bi bi-facebook"></i></a>
+                      <a href="https://www.instagram.com/arpit_falcon/"><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/arpitfalcon/"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Arpit</h4>
+                    <span>Joint Secretary</span>
+                    <span>Founding Member</span>
+                    <!--<p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/Aryaman.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href="mailto:aryamangargvanshi7@gmail.com"><i class="bi bi-envelope"></i></a>
+                      <a href="https://www.facebook.com/aryaman.gargvanshi3/"><i class="bi bi-facebook"></i></a>
+                      <a href="https://www.instagram.com/aryaman.gargvanshi/"><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/aryaman-gargvanshi-7a0618184/"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Aryaman Gargvanshi</h4>
+                    <span>Joint Treasurer</span>
+                    <!--<p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>-->
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="row gy-4 d-flex justify-content-center" style="padding:20px; margin-top: 10px; margin-bottom:10px;">
+
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/sharanya.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href="mailto:sharanyajha1128@gmail.com"><i class="bi bi-envelope"></i></a>
+                      <a href="https://www.facebook.com/sharanya.jha.37/"><i class="bi bi-facebook"></i></a>
+                      <a href="https://www.instagram.com/dusky_dorky_damsel/"><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/sharanya-jha-218567170/"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Sharanya Jha </h4>
+                    <span>Director</span>
+                    <!--<p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>-->
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                  <div class="member-img">
+                    <img src="assets/img/team/tanya.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href="mailto:jhatanya16aug@gmail.com"><i class="bi bi-envelope"></i></a>
+                      <a href="https://m.facebook.com/tanya.prakash.9022"><i class="bi bi-facebook"></i></a>
+                      <a href="https://www.instagram.com/tanya_jha16/"><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.linkedin.com/mwlite/in/tanya-prakash-6761ab193"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Tanya Prakash</h4>
+                    <span>Webmaster</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-  
-        </div>
-  
-      </section><!-- End Testimonials Section -->
-    
-    
-  
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+        </section><!-- End Team Section -->
 
-      <div class="container" data-aos="fade-up">
 
-        <header class="section-header">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
-        </header>
 
-        <div class="row gy-4">
 
-          <div class="col-lg-6">
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+
+          <div class="container" data-aos="fade-up">
+
+            <header class="section-header">
+              <h2>Contact</h2>
+              <p>Contact Us</p>
+            </header>
 
             <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="info-box">
-                   <a href="http://maps.google.com/?q=Birla Institute of Technology, Mesra, Jharkhand 835215"><i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>Finance Club, BIT MESRA <br>
-                    Ranchi, Jharkhand</p><br>
-				  </a>
-				  <img src="assets/img/map.png"  class="img-fluid">
+
+              <div class="col-lg-6">
+
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <div class="info-box">
+                      <a href="http://maps.google.com/?q=Birla Institute of Technology, Mesra, Jharkhand 835215"><i class="bi bi-geo-alt"></i>
+                        <h3>Address</h3>
+                        <p>Finance Club, BIT MESRA <br>
+                          Ranchi, Jharkhand</p><br>
+                      </a>
+                      <img src="assets/img/map.png" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="info-box">
+                      <i class="bi bi-telephone"></i>
+                      <h3>Call Us</h3>
+                      <strong>Tanay Goel<br>(President):</strong><br><a href="tel: +917607073910">+917607073910</a><br><br>
+                      <strong>Arpit<br>(President):</strong><br><a href="tel: +919570099779">+919570099779</a><br>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="info-box">
+                      <a href="mailto:financeclub@bitmesra.ac.in">
+                        <i class="bi bi-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:financeclub@bitmesra.ac.in">financeclub@bitmesra.ac.in</a></p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="social-links mt-3">
+                      <h1>
+                        <a href="https://github.com/Finance-Club-Bit-Mesra" class="github"><i class="bi bi-github"></i></a>
+                        <a href="https://www.facebook.com/Finance-Club-BIT-Mesra-102681781906064/" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/financeclub_bitm/" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/financeclubbit/" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+                      </h1>
+                    </div>
+                  </div>
                 </div>
+
               </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
-                  <strong>Tanay Goel<br>(President):</strong><br><a href="tel: +917607073910">+917607073910</a><br><br>
-                  <strong>Arpit<br>(President):</strong><br><a href="tel: +919570099779">+919570099779</a><br>
-                </div>
+              <div class="col-lg-6">
+                <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdV3hOqzoLvNStZW1w_KMsOey3OHKXlovQVv-td90r_o_NWzg/formResponse" target="_blank" method="POST" class="php-email-form">
+                  <div class="row gy-4">
+
+                    <div class="col-md-6">
+                      <input type="text" name="entry.1602679288" class="form-control" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="col-md-6 ">
+                      <input type="email" class="form-control" name="entry.168414878" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="col-md-12">
+                      <input type="text" class="form-control" name="entry.765786806" placeholder="Subject" required>
+                    </div>
+
+                    <div class="col-md-12">
+                      <textarea class="form-control" name="entry.1582625249" rows="6" placeholder="Message" required></textarea>
+                    </div>
+
+                    <div class="col-md-12 text-center">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                      <button type="submit">Send Message</button>
+                    </div>
+
+                  </div>
+                </form>
+
               </div>
-              <div class="col-md-6">
-                <div class="info-box">
-				          <a href="mailto:financeclub@bitmesra.ac.in">
-                    <i class="bi bi-envelope"></i>
-                    <h3>Email Us</h3>
-                    <p><a href="mailto:financeclub@bitmesra.ac.in">financeclub@bitmesra.ac.in</a></p>
-				          </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="social-links mt-3"><h1>
-                  <a href="https://github.com/Finance-Club-Bit-Mesra" class="github"><i class="bi bi-github"></i></a>
-                  <a href="https://www.facebook.com/Finance-Club-BIT-Mesra-102681781906064/" class="facebook"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.instagram.com/financeclub_bitm/" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
-                  <a href="https://www.linkedin.com/company/financeclubbit/" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
-                </h1>
-                </div>
-              </div>
+
+
             </div>
 
           </div>
-		      <div class="col-lg-6">
-            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdV3hOqzoLvNStZW1w_KMsOey3OHKXlovQVv-td90r_o_NWzg/formResponse" target="_blank" method="POST" class="php-email-form">
-              <div class="row gy-4">
 
-                <div class="col-md-6">
-                  <input type="text" name="entry.1602679288" class="form-control" placeholder="Your Name" required>
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="entry.168414878" placeholder="Your Email" required>
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="entry.765786806" placeholder="Subject" required>
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="entry.1582625249" rows="6" placeholder="Message" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </section><!-- End Contact Section -->
+        </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -689,18 +943,18 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min"></script>  
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="/Join_Us/form.js"></script>
-  
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 
 
   </script>
-  
-  
+
+
 </body>
 
 </html>
