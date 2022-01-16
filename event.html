@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+
   <title>Our Events</title>
   <link rel="icon" href="./assets/img/finance_club_logo.png" type="image/gif" sizes="20x20">
+
   <!-- Favicons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
@@ -21,11 +23,18 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="/Join_Us/form.css">
+  
+
   <!-- event css file -->
+
   <link rel="stylesheet" href="events/styles.css">
   <link href="assets/css/style.css" rel="stylesheet">
   
   <link rel="stylesheet" href="/Join_Us/form.css">
+
 </head>
 
  <!--pop-up join_us Form  -->
@@ -107,7 +116,67 @@
     </div>
   </header><!-- End Header -->
 
+  <!--pop-up join_us Form  -->
+  <div class="container form-popup scrollset" id="joinusForm">
+    <div class="container mt-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x-circle-fill closebtn float-end" viewBox="0 0 16 16" onclick="closeForm()">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+      </svg>
+    </div>
+    <div class="card mx-auto mt-3 logobox" style="max-width: 25rem;min-width: none;">
+      <img src="assets/img/finance_club_logo.png" alt="error" class="logo my-auto">
+    </div>
+    <div class="container card mx-auto px-5 pb-5 formbox" style="max-width: 60rem;min-width: none;">
+      <form method="post" autocomplete="off" name="google-sheet" class="row g-3 needs-validation innercontent">
+        <div class="col-md-4">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" name="Name" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="roll_no" class="form-label">Roll No.</label>
+          <input type="text" class="form-control" name="Roll No." required>
+        </div>
+        <div class="col-md-4">
+          <label for="branch" class="form-label">Branch</label>
+          <input type="text" class="form-control" name="Branch" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" name="Email" required>
+        </div>
+        <div class="col-md-6">
+          <label for="resume" class="form-label">Resume Link / Linkedin Profile Link</label>
+          <input class="form-control" type="text" name="Resume" required>
+        </div>
+        <div class="col-md-12">
+          <label for="Reason" class="form-label">Why do you wish to join the club?</label>
+          <textarea type="text" class="form-control" name="Reason for joining" required></textarea>
+        </div>
+        <div class="col-md-12">
+          <label for="Query" class="form-label">Other questions/queries if any?</label>
+          <textarea type="text" class="form-control" name="Query"></textarea>
+        </div>
+        <div class="d-grid">
+          <button class="btn btn-primary" type="submit">Apply</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <!-- end of pop-up form -->
+
+
   <main id="main">  
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      
+
+        <div class="section-title sec-title">
+          <h2>Events and Workshops</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
 
       <div class="row gy-4 rowcontainer">
 
@@ -135,7 +204,7 @@
         <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="600">
           <img class="eventimage" src="https://media-exp1.licdn.com/dms/image/C4D22AQHIKEjIVkl3Cw/feedshare-shrink_800/0/1631020137943?e=1645056000&v=beta&t=cRUPvtDriOO2yX3HXmo7asZGT_K0pWGozzViw4BafOI" alt="">
           <div class="overlay">
-            <div class="text">Finance club BIT MESRA is here to the rescue. The club fosters the culture of finance and promotes a professional association within the realm of it.It provides just the right amount of mentorship & opportunities you require to make money an excellent servant for you in future.With some of the most blockbuster events already organised and a plethora of even more enchanting events and community workshops down the pipeline, this club's journey ahead is just too mesmeric to be relinquished.</div>
+            <div class="text" style="font-size: 16px;">Finance club BIT MESRA is here to the rescue. The club fosters the culture of finance and promotes a professional association within the realm of it.It provides just the right amount of mentorship & opportunities you require to make money an excellent servant for you in future.With some of the most blockbuster events already organised and a plethora of even more enchanting events and community workshops down the pipeline, this club's journey ahead is just too mesmeric to be relinquished.</div>
           </div>
         </div>
         <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="700">
@@ -152,8 +221,9 @@
           </div>
         </div>
       </div>
-
-      </main>
+    
+  </section><!-- Event Section -->
+    </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -163,7 +233,7 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets_team/img/logo.png" alt="">
+              <img src="assets/img/logo.png" alt="">
               <span>Finance Club,BIT MESRA</span>
             </a>
             <p align="justify">We aim to acquaint the students with basic economic and
@@ -173,19 +243,19 @@
             <div class="social-links mt-3">
               <a href="https://github.com/Finance-Club-Bit-Mesra" class="twitter"><i class="bi bi-github"></i></a>
               <a href="https://www.facebook.com/Finance-Club-BIT-Mesra-102681781906064/" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/financeclub_bitm/" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/financeclubbit/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/financeclub_bitm/" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/financeclubbit/" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
             </div>
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Events</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Workshops</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="team.html">Team</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#values">Events</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Workshops</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="team.html">Team</a></li>
             </ul>
           </div>
 
@@ -193,7 +263,7 @@
             <h4>Events and Workshops</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Launch Event</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Workshop</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Workshop</a></li>
               <!--<li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>-->
@@ -203,10 +273,10 @@
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
             <p>
-              BIT MESRA 
+              BIT MESRA
               Ranchi,<br>
               Jharkhand <br><br>
-              <strong>Phone:</strong> Deval Tripathi (Vice-President):<br><a href="tel: +91 7485813826">+91 7485813826</a> <br>
+              <strong>Phone:</strong> Tanay Goel (President):<br><a href="tel: +91 76070 73910">+91 76070 73910</a> <br>
               <strong>Email: </strong><a href="mailto:financeclub@bitmesra.ac.in">financeclub@bitmesra.ac.in</a><br>
             </p>
 
@@ -215,13 +285,13 @@
         </div>
       </div>
     </div>
-  
+
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>Finance Club</span></strong>. All Rights Reserved
       </div>
 
-    </div> 
+    </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -239,7 +309,7 @@
   <script src="assets_team/js/main.js"></script>
   <script src="/Join_Us/form.js"></script>
 
-
+  <script src="/Join_Us/form.js"></script>
 </body>
 
 </html>

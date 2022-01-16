@@ -30,10 +30,63 @@
 
   <!-- Template Main CSS File -->
   <link href="assets_team/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/Join_Us/form.css">
   
   <link rel="stylesheet" href="/Join_Us/form.css">
   
 </head>
+
+<!--pop-up join_us Form  -->
+<div class="container form-popup scrollset" id="joinusForm">
+  <div class="container mt-1">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x-circle-fill closebtn float-end" viewBox="0 0 16 16" onclick="closeForm()">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+    </svg>
+  </div>
+  <div class="card mx-auto mt-3 logobox" style="max-width: 25rem;min-width: none;">
+    <img src="assets/img/finance_club_logo.png" alt="error" class="logo my-auto">
+  </div>
+  <div class="container card mx-auto px-5 pb-5 formbox" style="max-width: 60rem;min-width: none;">
+    <form method="post" autocomplete="off" name="google-sheet" class="row g-3 needs-validation innercontent">
+      <div class="col-md-4">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" name="Name" required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="roll_no" class="form-label">Roll No.</label>
+        <input type="text" class="form-control" name="Roll No." required>
+      </div>
+      <div class="col-md-4">
+        <label for="branch" class="form-label">Branch</label>
+        <input type="text" class="form-control" name="Branch" required>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="Email" required>
+      </div>
+      <div class="col-md-6">
+        <label for="resume" class="form-label">Resume Link / Linkedin Profile Link</label>
+        <input class="form-control" type="text" name="Resume" required>
+      </div>
+      <div class="col-md-12">
+        <label for="Reason" class="form-label">Why do you wish to join the club?</label>
+        <textarea type="text" class="form-control" name="Reason for joining" required></textarea>
+      </div>
+      <div class="col-md-12">
+        <label for="Query" class="form-label">Other questions/queries if any?</label>
+        <textarea type="text" class="form-control" name="Query"></textarea>
+      </div>
+      <div class="d-grid">
+        <button class="btn btn-primary" type="submit">Apply</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+<!-- end of pop-up form -->
+
+
 
 <body> 
   <!-- ======= Header ======= -->
@@ -811,74 +864,75 @@
     
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets_team/img/logo.png" alt="">
-              <span>Finance Club,BIT MESRA</span>
-            </a>
-            <p align="justify">We aim to acquaint the students with basic economic and
-              financial concepts and terminology. The club shall guide people on how they can
-              generate a passive source of income through the skills
-              they possess through holistic development.</p>
-            <div class="social-links mt-3">
-              <a href="https://github.com/Finance-Club-Bit-Mesra" class="twitter"><i class="bi bi-github"></i></a>
-              <a href="https://www.facebook.com/Finance-Club-BIT-Mesra-102681781906064/" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/financeclub_bitm/" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/financeclubbit/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="">
+            <span>Finance Club,BIT MESRA</span>
+          </a>
+          <p align="justify">We aim to acquaint the students with basic economic and
+            financial concepts and terminology. The club shall guide people on how they can
+            generate a passive source of income through the skills
+            they possess through holistic development.</p>
+          <div class="social-links mt-3">
+            <a href="https://github.com/Finance-Club-Bit-Mesra" class="twitter"><i class="bi bi-github"></i></a>
+            <a href="https://www.facebook.com/Finance-Club-BIT-Mesra-102681781906064/" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/financeclub_bitm/" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/financeclubbit/" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
           </div>
+        </div>
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Events</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Workshops</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="team.html">Team</a></li>
-            </ul>
-          </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#values">Events</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Workshops</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="team.html">Team</a></li>
+          </ul>
+        </div>
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Events and Workshops</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Launch Event</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Workshop</a></li>
-              <!--<li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>-->
-            </ul>
-          </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Events and Workshops</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Launch Event</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Workshop</a></li>
+            <!--<li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>-->
+          </ul>
+        </div>
 
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
-            <p>
-              BIT MESRA 
-              Ranchi,<br>
-              Jharkhand <br><br>
-              <strong>Phone:</strong> Deval Tripathi (Vice-President):<br><a href="tel: +91 7485813826">+91 7485813826</a> <br>
-              <strong>Email: </strong><a href="mailto:financeclub@bitmesra.ac.in">financeclub@bitmesra.ac.in</a><br>
-            </p>
-
-          </div>
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            BIT MESRA
+            Ranchi,<br>
+            Jharkhand <br><br>
+            <strong>Phone:</strong> Tanay Goel (President):<br><a href="tel: +91 76070 73910">+91 76070 73910</a> <br>
+            <strong>Email: </strong><a href="mailto:financeclub@bitmesra.ac.in">financeclub@bitmesra.ac.in</a><br>
+          </p>
 
         </div>
+
       </div>
     </div>
-  
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Finance Club</span></strong>. All Rights Reserved
-      </div>
+  </div>
 
-    </div> 
-  </footer><!-- End Footer -->
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Finance Club</span></strong>. All Rights Reserved
+    </div>
+
+  </div>
+</footer><!-- End Footer -->
+
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -890,6 +944,7 @@
   <script src="assets_team/vendor/php-email-form/validate.js"></script>
   <script src="assets_team/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets_team/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="/Join_Us/form.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets_team/js/main.js"></script>
