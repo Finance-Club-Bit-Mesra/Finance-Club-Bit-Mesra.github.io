@@ -32,6 +32,8 @@
   <link href="assets_team/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="/Join_Us/form.css">
   
+  <link rel="stylesheet" href="/Join_Us/form.css">
+  
 </head>
 
 <!--pop-up join_us Form  -->
@@ -100,29 +102,10 @@
         <ul>
           <li><a class="nav-link " href="index.html">Home</a></li>
           <li><a class="nav-link " href="index.html#about">About</a></li>
-          <li><a class="nav-link " href="index.html#values">Events</a></li>
+          <li><a class="nav-link " href="index.html#services">Events</a></li>
           <!--<li><a class="nav-link " href="index.html#services">Workshop</a></li>-->
 		      <li><a class="nav-link  " href="index.html#testimonials">Testimonials</a></li>
-          <li><a class="nav-link active" href="team.html">Team</a></li>
-          <!--
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul> 
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>-->
+          <li><a class="nav-link active" href="team.html">Team</a></li>          
           <li><a class="nav-link " href="index.html#contact">Contact</a></li>
           <li><a class="getstarted cursor" onclick="openForm()">JOIN US</a></li>
         </ul>
@@ -131,6 +114,56 @@
 
     </div>
   </header><!-- End Header --> 
+
+  <!--pop-up join_us Form  -->
+ <div class="container form-popup scrollset" id="joinusForm">
+  <div class="container mt-1">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x-circle-fill closebtn float-end" viewBox="0 0 16 16" onclick="closeForm()">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+    </svg>
+  </div>
+  <div class="card mx-auto mt-3 logobox" style="max-width: 25rem;min-width: none;">
+    <img src="assets/img/finance_club_logo.png" alt="error" class="logo my-auto">
+  </div>
+  <div class="container card mx-auto px-5 pb-5 formbox" style="max-width: 60rem;min-width: none;">
+    <form method="post" autocomplete="off" name="google-sheet" class="row g-3 needs-validation innercontent">
+      <div class="col-md-4">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" name="Name" required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="roll_no" class="form-label">Roll No.</label>
+        <input type="text" class="form-control" name="Roll No." required>
+      </div>
+      <div class="col-md-4">
+        <label for="branch" class="form-label">Branch</label>
+        <input type="text" class="form-control" name="Branch" required>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="Email" required>
+      </div>
+      <div class="col-md-6">
+        <label for="resume" class="form-label">Resume Link / Linkedin Profile Link</label>
+        <input class="form-control" type="text" name="Resume" required>
+      </div>
+      <div class="col-md-12">
+        <label for="Reason" class="form-label">Why do you wish to join the club?</label>
+        <textarea type="text" class="form-control" name="Reason for joining" required></textarea>
+      </div>
+      <div class="col-md-12">
+        <label for="Query" class="form-label">Other questions/queries if any?</label>
+        <textarea type="text" class="form-control" name="Query"></textarea>
+      </div>
+      <div class="d-grid">
+        <button class="btn btn-primary" type="submit">Apply</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+<!-- end of pop-up form -->
      
 
   <!-- ======= Hero Section ======= -->
@@ -915,7 +948,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets_team/js/main.js"></script>
-
+  <script src="/Join_Us/form.js"></script>
 </body>
 
 </html>

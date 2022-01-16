@@ -4,11 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Events and Workshop</title>
-  <link rel="icon" href="./assets/img/finance_club_logo.png" type="image/gif" sizes="20x20">
-  <meta content="" name="description">
 
-  <meta content="" name="keywords">
+
+  <title>Our Events</title>
+  <link rel="icon" href="./assets/img/finance_club_logo.png" type="image/gif" sizes="20x20">
 
   <!-- Favicons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
@@ -30,9 +29,64 @@
   
 
   <!-- event css file -->
-  <link href="events/styles.css" rel="stylesheet" >
-  <link href="assets_team/css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="events/styles.css">
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/Join_Us/form.css">
+
 </head>
+
+ <!--pop-up join_us Form  -->
+ <div class="container form-popup scrollset" id="joinusForm">
+  <div class="container mt-1">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x-circle-fill closebtn float-end" viewBox="0 0 16 16" onclick="closeForm()">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+    </svg>
+  </div>
+  <div class="card mx-auto mt-3 logobox" style="max-width: 25rem;min-width: none;">
+    <img src="assets/img/finance_club_logo.png" alt="error" class="logo my-auto">
+  </div>
+  <div class="container card mx-auto px-5 pb-5 formbox" style="max-width: 60rem;min-width: none;">
+    <form method="post" autocomplete="off" name="google-sheet" class="row g-3 needs-validation innercontent">
+      <div class="col-md-4">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" name="Name" required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="roll_no" class="form-label">Roll No.</label>
+        <input type="text" class="form-control" name="Roll No." required>
+      </div>
+      <div class="col-md-4">
+        <label for="branch" class="form-label">Branch</label>
+        <input type="text" class="form-control" name="Branch" required>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="Email" required>
+      </div>
+      <div class="col-md-6">
+        <label for="resume" class="form-label">Resume Link / Linkedin Profile Link</label>
+        <input class="form-control" type="text" name="Resume" required>
+      </div>
+      <div class="col-md-12">
+        <label for="Reason" class="form-label">Why do you wish to join the club?</label>
+        <textarea type="text" class="form-control" name="Reason for joining" required></textarea>
+      </div>
+      <div class="col-md-12">
+        <label for="Query" class="form-label">Other questions/queries if any?</label>
+        <textarea type="text" class="form-control" name="Query"></textarea>
+      </div>
+      <div class="d-grid">
+        <button class="btn btn-primary" type="submit">Apply</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+<!-- end of pop-up form -->
+
 
 <body>
 
@@ -51,27 +105,8 @@
           <li><a class="nav-link " href="index.html#about">About</a></li>
           <li><a class="nav-link active " href="index.html#services">Events</a></li>
           <!--<li><a class="nav-link " href="index.html#services">Workshop</a></li>-->
-          <li><a class="nav-link  " href="index.html#testimonials">Testimonials</a></li>
+		      <li><a class="nav-link  " href="index.html#testimonials">Testimonials</a></li>
           <li><a class="nav-link" href="team.html">Team</a></li>
-          <!--
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul> 
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>-->
           <li><a class="nav-link " href="index.html#contact">Contact</a></li>
           <li><a class="getstarted cursor" onclick="openForm()">JOIN US</a></li>
         </ul>
@@ -145,45 +180,44 @@
 
       <div class="row gy-4 rowcontainer">
 
-        <div class="col-lg-4 col-md-6  innercontainer" data-aos-delay="200">
+        <div class="col-lg-4 col-md-12  innercontainer" data-aos-delay="200">
           <img class="eventimage " src="https://media-exp1.licdn.com/dms/image/C5622AQENzIMuVmDkfw/feedshare-shrink_800/0/1641531898429?e=1645056000&v=beta&t=aWxSkkfrlWjzsC2u-2TvjDedxIMakLdazJu1MU5vJro" alt="">
           <div class="overlay">
             <div class="text">The workshop shall be structured in an easy to imbibe module wise format for better learning, with topics ranging from basics to the very pinnacles of the finance world. It shall be a great opportunity for finance enthusiasts to learn about Strategies in Finance from Industry Professionals, with each resource person being a stalwart in their field. </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 innercontainer" data-aos-delay="300">
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="300">
           <img class="eventimage  innercontainer" src="https://media-exp1.licdn.com/dms/image/C4E22AQEccVtublc0Rg/feedshare-shrink_800/0/1639820361900?e=1645056000&v=beta&t=V9vk32a25Qcki_G7P6kqYWA9Dsuj10-LH1YSd4SsR4I" alt="">
           <div class="overlay">
             <div class="text">Gathering knowledge will not help you gain acknowledgement unless you exhibit it. So fasten your seatbelts for the 22nd and 23rd of this December, as The Finance Club BIT Mesra, brings to you the most invigorating and instructive event, “QUIZANCE”, a quiz competition with a brilliant opportunity to showcase your expertise on business and finance.With fascinating prizes worth ₹ 6k, This event comprises 2 rounds.</div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 innercontainer" data-aos-delay="400">
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="400">
           <img class="eventimage " src="https://media-exp1.licdn.com/dms/image/C4D22AQGFWb5LIpyFNg/feedshare-shrink_800/0/1633020307200?e=1645056000&v=beta&t=IqEZ6fN6AOx_gTmk8NaqSaBzknyFeb1uGkt7uIi4o3Q" alt="">
           <div class="overlay">
             <div class="text">The Finance Club, BIT Mesra brings you La casa de financià. An event where you can use your knack for the market to gain exciting rewards. It comprises two rounds that would allow you to scrutinize your marketing and trading skills. </div>
           </div>
         </div>
 
-
-        <div class="col-lg-4 col-md-6 innercontainer" data-aos-delay="600">
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="600">
           <img class="eventimage" src="https://media-exp1.licdn.com/dms/image/C4D22AQHIKEjIVkl3Cw/feedshare-shrink_800/0/1631020137943?e=1645056000&v=beta&t=cRUPvtDriOO2yX3HXmo7asZGT_K0pWGozzViw4BafOI" alt="">
           <div class="overlay">
             <div class="text" style="font-size: 16px;">Finance club BIT MESRA is here to the rescue. The club fosters the culture of finance and promotes a professional association within the realm of it.It provides just the right amount of mentorship & opportunities you require to make money an excellent servant for you in future.With some of the most blockbuster events already organised and a plethora of even more enchanting events and community workshops down the pipeline, this club's journey ahead is just too mesmeric to be relinquished.</div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 innercontainer" data-aos-delay="700">
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="700">
           <img class="eventimage" src="https://media-exp1.licdn.com/dms/image/C4D22AQEv7m2ktdADRg/feedshare-shrink_800/0/1632027728244?e=1645056000&v=beta&t=PbUNWrhaoO3w339Vt58hkD56JDtaKDlGl-AusqbDdDU" alt="">
           <div class="overlay">
             <div class="text">The Institution's Innovation Council of BIT Mesra, in association with the Entrepreneurship Development Cell and Finance Club, is thrilled to present ' BIT Nishan' - an initiative to provide seed funding to home startups run by students and faculty of BIT Mesra and its off-campuses. </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 innercontainer" data-aos-delay="800">
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="800">
           <img class="eventimage" src="https://media-exp1.licdn.com/dms/image/C4D22AQG2QhKZqctKrg/feedshare-shrink_800/0/1628351003391?e=1645056000&v=beta&t=n73zOIrVHWvjmoAkNAHytf3gOyCFmlkvZrOOAsRFEFM" alt="">
           <div class="overlay">
-            <div class="text" style="font-size: 16px;">The Finance Club of BIT Mesra presents the utmost awaited event, “SPARE THE SENSEX”, a strategic case competition with a riveting opportunity to explore the vast and ever-expanding arena of finance.The core of the competition lies around the economic understanding of the participants as they go through 2 meticulous rounds of brainstorming quizzes and challenging case studies. Participants will have to analyse the provided cases related to some of the most significant financial scams in the country and prepare a presentation for the same.</div>
+            <div class="text" style="font-size: 16px;">The Finance Club of BIT Mesra presents the utmost awaited event, “SPARE THE SENSEX”, a strategic case competition with a riveting opportunity to explore the vast and ever-expanding arena of finance.The core of the competition lies around the economic understanding of the participants as they go through 2 meticulous rounds of brainstorming quizzes and challenging case studies.</div>
           </div>
         </div>
       </div>
@@ -273,6 +307,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets_team/js/main.js"></script>
+  <script src="/Join_Us/form.js"></script>
 
   <script src="/Join_Us/form.js"></script>
 </body>
