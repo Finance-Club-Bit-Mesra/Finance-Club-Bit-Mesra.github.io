@@ -1,5 +1,6 @@
 .innercontainer {
   position: relative;
+  overflow: hidden;
 }
 
 .rowcontainer{
@@ -7,29 +8,33 @@
   margin-right:auto;
   margin-top: 0;
   margin-bottom: 10px;
-  width: 80%;
+  width: 90%;
 }
 
 .eventimage {
   opacity: 1;
-   display: block;
-   width: 100%;
-   height: 400px;
-   transition: .5s ease;
-   backface-visibility: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
  }
 
 
 .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: .5s ease;
-    opacity: 0;
-    width: 100%;
-    position: absolute;
-    text-align: justify;
-    top : 1%;
-    left: 1%;
-    text-align: justify;
-
+  overflow: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  position: absolute;
+  top : 1%;
+  left: 0%;
+  text-align: justify;
 }
 
 .innercontainer:hover .overlay {
@@ -40,21 +45,9 @@
 }
 .text {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   position: absolute;
-  padding: 30px;
-  margin: 10px;
-  transition: opacity .6s;
-  /* position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 1.25rem;
-    font-size: .8rem;
-    text-align: justify;
-    opacity: 0;
-    transition: opacity .6s;
-    cursor: pointer;
-    color: #fff;
-    overflow-y: auto;
-    max-height: 100%; */
+  transition: opacity .6s; 
+  width: 80%;
+  
 }

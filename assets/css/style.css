@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -164,10 +164,12 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  background: hsla(0,0%,98.4%,.9);
 }
 
 .header.header-scrolled {
   background: #fff;
+  background: hsla(0,0%,98.4%,.9);
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
@@ -343,7 +345,7 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(1, 22, 61, 0.9);
+  background: rgba(7, 91, 248, 0.4);
   transition: 0.3s;
 }
 
@@ -362,7 +364,7 @@ section {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background: hsla(0,0%,98.4%,.9);
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -1896,7 +1898,7 @@ section {
   box-sizing: content-box;
   padding: 10px;
   margin: 40px 30px;
-  box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
+  box-shadow: 5px 5px 20px rgba(2, 93, 250, 50%);
   background: #fff;
   min-height: 320px;
   display: flex;
