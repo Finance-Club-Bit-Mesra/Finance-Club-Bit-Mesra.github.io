@@ -164,7 +164,7 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
-  background: hsla(0,0%,98.4%,.9);
+  background: hsla(0,0%,100%,.9);
 }
 
 .header.header-scrolled {
@@ -364,7 +364,7 @@ section {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background: hsla(0,0%,98.4%,.9);
+  background: hsla(0,0%,100%,.9);
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -1964,7 +1964,7 @@ section {
 
 @media (max-width: 1199px) {
   .testimonials .swiper-slide-active {
-
+      opacity: 1;
   }
   .testimonials .swiper-pagination {
     margin-top: 0;
