@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: white;
+  background: #6bc1e9;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -45,8 +45,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #6bc1e9;
-  color: #fff;
+  background: rgb(10, 26, 252);
+  color: #6bc1e9;
 }
 
 .back-to-top.active {
@@ -270,8 +270,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .navbar ul {
     display: none;
-  }
- 
+  } 
 
 }
 
@@ -284,6 +283,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   background: rgba(1, 22, 61, 0.9);
   transition: 0.3s;
+  
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -361,7 +361,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -375,16 +375,17 @@ section {
 }
 .sec-title {
   text-align: center;
-  padding-top: 75px;
-  padding-bottom: 15px;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   padding-bottom: 20px;
+  padding-top: 20px;
   position: relative;
   color: #37517e;
 }
