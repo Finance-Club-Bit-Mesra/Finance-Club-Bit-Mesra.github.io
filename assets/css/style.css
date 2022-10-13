@@ -1949,7 +1949,18 @@ section {
   margin: 10px 0 5px 0;
   color: #111;
 }
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+.read-more-btn{
+    color: #0984e3;
+}
 
+.read-more-text{
+    display: none;
+}
+
+.read-more-text--show{
+    display: inline;
+}
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   color: #999;
