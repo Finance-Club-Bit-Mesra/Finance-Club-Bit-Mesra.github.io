@@ -850,9 +850,9 @@ section {
   font-size: 18px;
 }
 
-.services .service-box.blue {
-  solid #2db6fa;
-}
+/* .services .service-box.blue { */
+  /* solid #2db6fa; */
+/* } */
 
 .services .service-box.blue .icon {
   color: #2db6fa;
@@ -1930,7 +1930,17 @@ section {
 .testimonials .testimonial-item .stars {
   margin-bottom: 15px;
 }
+.read-more-btn{
+  color: #0984e3;
+}
 
+.read-more-text{
+  display: none;
+}
+
+.read-more-text--show{
+  display: inline;
+}
 .testimonials .testimonial-item .stars i {
   color: #ffc107;
   margin: 0 1px;
