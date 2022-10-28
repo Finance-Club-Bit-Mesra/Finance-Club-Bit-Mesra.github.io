@@ -268,7 +268,7 @@ function lightbox_close() {
    */
    const parentContainer =  document.querySelector('.swiper-wrapper');
 
-   parentContainer.addEventListener('click', (event) => {
+   parentContainer.addEventListener('click', event => {
    
        const current = event.target;
    
